@@ -1,0 +1,52 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RaBatSword",
+      "🚗",
+      "LiPocketKnife",
+      "⚔",
+      "LiTarget"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Статейки/Навыки/Общие": "LiGem",
+  "Статейки/Навыки/Выступление": "🕺",
+  "Статейки/Навыки": "🤹‍♂️",
+  "Статейки/Навыки/Социальные": "🗣",
+  "Статейки/Навыки/Ремесло": "🛠",
+  "Статейки/Навыки/Дальний бой": {
+    "iconName": "LiTarget",
+    "iconColor": "#ff0000"
+  },
+  "Статейки/Навыки/Ближний бой": "⚔",
+  "Статейки/Навыки/Мастерство": {
+    "iconName": "LiPocketKnife",
+    "iconColor": "#18d00b"
+  },
+  "Статейки/Навыки/Транспорт": "🚗"
+}

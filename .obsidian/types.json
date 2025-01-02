@@ -1,0 +1,11 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Ссылки": "multitext",
+    "Связанные навыки": "multitext",
+    "Уровни": "multitext",
+    "ФЫВфы": "datetime"
+  }
+}
