@@ -43,22 +43,15 @@
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Диаграммы/Все ветки.canvas",
-                "viewState": {
-                  "x": 461.83363559721636,
-                  "y": -174.19790209559235,
-                  "zoom": -0.8565524995739864
-                }
-              },
+              "type": "empty",
+              "state": {},
               "pinned": true,
-              "icon": "lucide-layout-dashboard",
-              "title": "Все ветки"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -80,7 +73,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -189,7 +182,7 @@
               "type": "advanced-tables-toolbar",
               "state": {},
               "icon": "lucide-file",
-              "title": "Плагин больше не активен"
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -202,26 +195,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
-      "workspaces:Пространства": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "3d-graph-new:Global 3D Graph": false
     }
   },
-  "active": "24fbc092de914920",
+  "active": "057091a41a7b9901",
   "lastOpenFiles": [
-    "Статейки/Навыки/Общие/1. Тело/1. Атлетика/Навыки/Атлет 2.md",
+    "New Text Document.txt",
+    "Диаграммы/Все ветки.canvas",
     "Статейки/Навыки/Общие/1. Тело/1. Атлетика/Навыки/Атлет 1.md",
+    "Статейки/Навыки/Общие/1. Тело/1. Атлетика/Навыки/Атлет 2.md",
     "Статейки/Навыки/Общие/1. Тело/1. Атлетика/Атлетика.md",
+    "Диаграммы/Ветки способностей.canvas",
     "Статейки/Навыки/Общие/2. Ловкость",
     "Статейки/Навыки/Общие/1. Тело",
-    "Диаграммы/Ветки способностей.canvas",
-    "Диаграммы/Все ветки.canvas",
     "Статейки/Сопротивления/Сопротивление эффекту.md",
     "Статейки/Понятия/Ход.md",
     "Статейки/Понятия/Боевая сцена.md",
@@ -244,7 +238,6 @@
     "Статейки/Навыки/Общие/2. Ловкость/1. Акробатика/Навыки/Акробат 3.md",
     "Статейки/Навыки/Общие/2. Ловкость/1. Акробатика/Акробатика.md",
     "Статейки/Навыки/Общие/2. Ловкость/1. Акробатика/Навыки/Акробат 1.md",
-    "Статейки/Навыки/Дальний бой/Ката стрелка/Ката стрелка.md",
     "Статейки/Навыки/Общие/2. Ловкость/2. Координация и реакция/Навыки",
     "Статейки/Навыки/Общие/2. Ловкость/1. Акробатика/Навыки",
     "Статейки/Навыки/Дальний бой/Фартовый стрелок",
