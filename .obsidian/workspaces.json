@@ -1,4 +1,211 @@
 {
-  "workspaces": {},
-  "active": "123"
+  "workspaces": {
+    "Ветки - примеры": {
+      "main": {
+        "id": "70e1a4bedf0766f1",
+        "type": "split",
+        "children": [
+          {
+            "id": "c12b286f483fbc03",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5ce54f0a89f8aca6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "Диаграммы/Все ветки.canvas",
+                    "viewState": {
+                      "x": 6238.5,
+                      "y": 987.5,
+                      "zoom": -2.8565524995739864
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-layout-dashboard",
+                  "title": "Все ветки"
+                }
+              },
+              {
+                "id": "b8d2293d14774619",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "Диаграммы/Ветки способностей.canvas",
+                    "viewState": {
+                      "x": 474.60573825797815,
+                      "y": 2125.504945352659,
+                      "zoom": -0.43464056699888526
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-layout-dashboard",
+                  "title": "Ветки способностей"
+                }
+              },
+              {
+                "id": "7b3f62eb24cf40b9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Статейки/Действия/Действия.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Действия"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "3679490d845d8b58",
+        "type": "split",
+        "children": [
+          {
+            "id": "8c57b4784577044a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "18e6cba12dd0f15a",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Файловый менеджер"
+                }
+              },
+              {
+                "id": "510c3d55df4a100f",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Поиск"
+                }
+              },
+              {
+                "id": "4dbb92993f6f10c9",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Закладки"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "59c40acdc134af8b",
+        "type": "split",
+        "children": [
+          {
+            "id": "08283a0ec343f361",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "18612e1efc9e8efb",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Диаграммы/Ветки способностей.canvas",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Обратные ссылки для Ветки способностей"
+                }
+              },
+              {
+                "id": "d9fbdf55b88430cf",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Исходящие ссылки"
+                }
+              },
+              {
+                "id": "98fae1ed199e4fb3",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Теги"
+                }
+              },
+              {
+                "id": "89da5aece4b9b6a4",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {},
+                  "icon": "lucide-list",
+                  "title": "Структура"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Меню быстрого перехода": false,
+          "graph:Граф": false,
+          "canvas:Создать новый холст": false,
+          "daily-notes:Сегодняшняя заметка": false,
+          "templates:Вставить шаблон": false,
+          "command-palette:Открыть палитру команд": false,
+          "workspaces:Пространства": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "3d-graph-new:Global 3D Graph": false
+        }
+      },
+      "active": "b8d2293d14774619",
+      "mtime": "2025-01-03T15:19:52+07:00"
+    }
+  },
+  "active": "Ветки - примеры"
 }
