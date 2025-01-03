@@ -5,7 +5,6 @@
     "tags": "tags",
     "Ссылки": "multitext",
     "Связанные навыки": "multitext",
-    "Уровни": "multitext",
-    "ФЫВфы": "datetime"
+    "Уровни": "multitext"
   }
 }
