@@ -1,3 +1,9 @@
 {
-  "ITS@@select": "pathfinder"
+  "ITS@@select": "none",
+  "ITS@@ITS-Note-Title-Styling": "none",
+  "ITS@@Inline-Title-Styling": "none",
+  "ITS@@font": "Consolas,'Calisto MT', 'Palatino Black', 'Book Antiqua', 'Georgia', 'Suez One', serif",
+  "ITS@@tab-widths": "tab-auto",
+  "ITS@@ITS-folder-arrows": "folder-arrow-display",
+  "ITS@@s-d": false
 }
