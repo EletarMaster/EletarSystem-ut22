@@ -28,195 +28,268 @@ __export(main_exports, {
 });
 module.exports = __toCommonJS(main_exports);
 var import_obsidian = require("obsidian");
-var FILE_VIEW = "file-view";
-var CANVAS_VIEW = "canvas-view";
-var ALL_VIEW = "all-view";
+var VIEW_TYPE = "canvas-links";
 var CanvasLinksPlugin = class extends import_obsidian.Plugin {
-  onload() {
-    this.registerView(FILE_VIEW, (leaf) => new FileView(leaf));
-    this.registerView(CANVAS_VIEW, (leaf) => new CanvasView(leaf));
-    this.addCommand({
-      id: ALL_VIEW,
-      name: "Enable plugin",
-      callback: () => {
-        this.onloadFileView();
-        this.onloadCanvasView();
-      }
-    });
-  }
-  async onloadFileView() {
-    if (this.app.workspace.getLeavesOfType(FILE_VIEW).length == 0) {
-      await this.app.workspace.getRightLeaf(false).setViewState({
-        type: FILE_VIEW,
+  async onload() {
+    var _a;
+    this.registerView(VIEW_TYPE, (leaf) => new CanvasLinksView(leaf));
+    const leafs = this.app.workspace.getLeavesOfType(VIEW_TYPE);
+    if (isEmpty(leafs)) {
+      (_a = this.app.workspace.getRightLeaf(false)) == null ? void 0 : _a.setViewState({
+        type: VIEW_TYPE,
         active: true
       });
+    } else {
+      this.app.workspace.revealLeaf(leafs[0]);
     }
-  }
-  async onloadCanvasView() {
-    if (this.app.workspace.getLeavesOfType(CANVAS_VIEW).length == 0) {
-      await this.app.workspace.getRightLeaf(false).setViewState({
-        type: CANVAS_VIEW,
-        active: true
-      });
-    }
-  }
-  onunload() {
   }
 };
-var FileView = class extends import_obsidian.ItemView {
+var CanvasLinksView = class extends import_obsidian.ItemView {
   constructor(leaf) {
     super(leaf);
+    this.selectedNodeId = null;
+    this.canvasNode = /* @__PURE__ */ new Map();
   }
   getViewType() {
-    return FILE_VIEW;
+    return VIEW_TYPE;
   }
   getDisplayText() {
-    return "Files";
+    return "Canvas Links";
   }
   async onOpen() {
-    this.icon = "chevron-right-square";
-    this.getFiles().then((notes) => {
-      renderView(notes, "Files", this.containerEl);
-    });
-    this.registerEvent(this.app.workspace.on("file-open", () => {
-      this.getFiles().then((notes) => {
-        renderView(notes, "Files", this.containerEl);
-      });
+    this.icon = "align-center-horizontal";
+    this.containerEl.empty();
+    const element = this.renderPane();
+    const view = this.app.workspace.getLeaf().view;
+    if (view.file != null) {
+      this.render(element, view);
+    }
+    this.registerEvent(this.app.vault.on("modify", (file) => {
+      var _a;
+      if ("canvas" != file.extension) {
+        return;
+      }
+      const view2 = this.app.workspace.getLeaf().view;
+      const filePath = file.path;
+      const previousNodeIds = (_a = this.canvasNode.get(filePath)) != null ? _a : [];
+      const canvas = view2.canvas;
+      let currentNodeIds = [];
+      for (const [key, value] of canvas.nodes) {
+        if (value.file != null) {
+          currentNodeIds.push(key);
+        }
+      }
+      if (currentNodeIds.length != previousNodeIds.length) {
+        this.canvasNode.set(filePath, currentNodeIds);
+        this.render(element, view2);
+      }
+    }));
+    this.registerEvent(this.app.workspace.on("active-leaf-change", (leaf) => {
+      const afterChangeView = leaf.view;
+      if (afterChangeView.file == null) {
+        if ("empty" === afterChangeView.getViewType()) {
+          element.empty();
+        }
+      } else {
+        if ("canvas" === afterChangeView.getViewType() && this.selectedNodeId != null) {
+          const canvas = afterChangeView.canvas;
+          for (const [key, value] of canvas.nodes) {
+            if (key === this.selectedNodeId) {
+              focus(canvas, value);
+              this.selectedNodeId = null;
+              break;
+            }
+          }
+        }
+        this.render(element, afterChangeView);
+      }
     }));
   }
-  async getFiles() {
-    const activeCanvas = this.app.workspace.getActiveFile();
-    if (activeCanvas == null || "canvas" != activeCanvas.extension) {
-      return [];
-    }
-    let canvasContent = "";
-    await this.app.vault.cachedRead(activeCanvas).then((content) => {
-      canvasContent = content;
+  renderPane() {
+    return this.containerEl.createDiv({
+      cls: "outgoing-link-pane node-insert-event",
+      attr: { "style": "position: relative;" }
     });
-    const nodes = JSON.parse(canvasContent).nodes;
-    if (nodes == null) {
-      return [];
+  }
+  render(body, view) {
+    body.empty();
+    if ("canvas" === view.getViewType()) {
+      this.renderFiles(body, view.file, view.canvas.nodes);
+      this.renderCanvases(body, view.file);
+    } else {
+      this.renderCanvases(body, view.file);
     }
-    const filePaths = [];
-    for (const node of nodes) {
-      if ("file" == node.type) {
-        filePaths.push(node.file);
+  }
+  renderFiles(body, currentFile, nodes) {
+    const header = body.createDiv({
+      cls: "tree-item-self is-clickable",
+      attr: {
+        "aria-label": "Click to collapse",
+        "aria-label-position": "right"
       }
-    }
-    const files = [];
-    for (const filePath of filePaths) {
-      const file = this.app.vault.getAbstractFileByPath(filePath);
-      if (file != null) {
-        files.push(file);
-      }
-    }
-    return files;
-  }
-  async onClose() {
-  }
-};
-var CanvasView = class extends import_obsidian.ItemView {
-  constructor(leaf) {
-    super(leaf);
-  }
-  getViewType() {
-    return CANVAS_VIEW;
-  }
-  getDisplayText() {
-    return "Canvas";
-  }
-  async onOpen() {
-    this.icon = "chevron-left-square";
-    this.getCanvas().then((canvas) => {
-      renderView(canvas, "Canvases", this.containerEl);
     });
-    this.registerEvent(this.app.workspace.on("file-open", () => {
-      this.getCanvas().then((canvas) => {
-        renderView(canvas, "Canvases", this.containerEl);
+    header.createSpan({ cls: "tree-item-icon collapse-icon" });
+    header.createDiv({
+      cls: "tree-item-inner",
+      text: "FILE CONTAIN"
+    });
+    const files = this.getFiles(currentFile, nodes);
+    header.createDiv({ cls: "tree-item-flair-outer" }, (el) => {
+      el.createSpan({
+        cls: "tree-item-flair",
+        text: files.length.toString()
       });
-    }));
-  }
-  async getCanvas() {
-    const activeFile = this.app.workspace.getActiveFile();
-    if (activeFile == null) {
-      return [];
+    });
+    if (isEmpty(files)) {
+      return;
     }
-    const canvas = [];
-    const all = this.app.vault.getFiles();
-    for (const file of all) {
-      if ("canvas" == file.extension) {
-        canvas.push(file);
+    const content = body.createDiv({ cls: "search-result-container" });
+    content.createDiv({
+      attr: {
+        "style": "width: 1px; height: 0.1px; margin-bottom: 0px;"
       }
-    }
-    const canvasContent = /* @__PURE__ */ new Map();
-    for (const file of canvas) {
-      await this.app.vault.cachedRead(file).then((content) => {
-        canvasContent.set(file, content);
+    });
+    for (const file of files) {
+      content.createDiv({
+        cls: "tree-item-self is-clickable outgoing-link-item",
+        attr: { "draggable": true }
+      }, (el) => {
+        el.createSpan({ cls: "tree-item-icon" }, (el2) => {
+          if ("md" === file.extension) {
+            (0, import_obsidian.setIcon)(el2, "file-text");
+          } else {
+            (0, import_obsidian.setIcon)(el2, "file-image");
+          }
+        });
+        el.createDiv({
+          cls: "tree-item-inner",
+          text: file.name.substring(0, file.name.lastIndexOf("."))
+          // don't show path, like link view
+        });
+      }).addEventListener("click", () => {
+        this.app.workspace.openLinkText("", file.path);
       });
+      ;
     }
-    const canvasEmebeded = [];
-    for (const [file, content] of canvasContent) {
+  }
+  async renderCanvases(body, currentFile) {
+    const header = body.createDiv({
+      cls: "tree-item-self is-clickable",
+      attr: {
+        "aria-label": "Click to collapse",
+        "aria-label-position": "right"
+      }
+    });
+    header.createSpan({ cls: "tree-item-icon collapse-icon" });
+    header.createDiv({
+      cls: "tree-item-inner",
+      text: "CANVAS CONTAINED"
+    });
+    const canvases = await this.getCanvas(currentFile);
+    header.createDiv({ cls: "tree-item-flair-outer" }, (el) => {
+      el.createSpan({
+        cls: "tree-item-flair",
+        text: canvases.length.toString()
+      });
+    });
+    if (isEmpty(canvases)) {
+      return;
+    }
+    const content = body.createDiv({ cls: "search-result-container" });
+    content.createDiv({
+      attr: {
+        "style": "width: 1px; height: 0.1px; margin-bottom: 0px;"
+      }
+    });
+    for (const canvas of canvases) {
+      content.createDiv({
+        cls: "tree-item-self is-clickable outgoing-link-item",
+        attr: { "draggable": true }
+      }, (el) => {
+        el.createSpan({ cls: "tree-item-icon" }, (el2) => {
+          (0, import_obsidian.setIcon)(el2, "layout-dashboard");
+        });
+        el.createDiv({
+          cls: "tree-item-inner",
+          text: canvas.name.substring(0, canvas.name.lastIndexOf("."))
+          // don't show path, like link view
+        });
+      }).addEventListener("click", () => {
+        this.app.workspace.openLinkText("", canvas.path);
+        this.selectedNodeId = canvas.selectedNodeId;
+      });
+      ;
+    }
+  }
+  async getCanvas(currentFile) {
+    const canvases = [];
+    const files = this.app.vault.getFiles();
+    for (const file of files) {
+      if ("canvas" != file.extension) {
+        continue;
+      }
+      const content = await this.app.vault.cachedRead(file);
+      if (isEmpty(content)) {
+        continue;
+      }
       const nodes = JSON.parse(content).nodes;
       if (nodes == null) {
         continue;
       }
       for (const node of nodes) {
-        if ("file" == node.type && activeFile.path == node.file) {
-          canvasEmebeded.push(file);
+        if ("file" === node.type && currentFile.path === node.file) {
+          const canvas = file;
+          canvas.selectedNodeId = node.id;
+          canvases.push(canvas);
+          break;
         }
       }
     }
-    return canvasEmebeded;
+    canvases.sort((a, b) => asc(a.basename.toLowerCase(), b.basename.toLowerCase()));
+    return canvases;
   }
-  async onClose() {
+  getFiles(currentFile, nodes) {
+    const files = [];
+    let nodeIds = [];
+    for (const [key, value] of nodes) {
+      if (value.file != null) {
+        nodeIds.push(key);
+        files.push(value.file);
+      }
+    }
+    this.canvasNode.set(currentFile.path, nodeIds);
+    files.sort((a, b) => asc(a.basename.toLowerCase(), b.basename.toLowerCase()));
+    return files;
   }
 };
-function renderView(files, text, container) {
-  container.empty();
-  const pane = container.createDiv({
-    cls: "outgoing-link-pane node-insert-event",
-    attr: { "style": "position: relative;" }
-  });
-  const header = pane.createDiv({
-    cls: "tree-item-self is-clickable",
-    attr: {
-      "aria-label": "Click to collapse",
-      "aria-label-position": "right"
+function focus(canvas, node) {
+  canvas.select(node);
+  canvas.zoomToSelection();
+}
+function isEmpty(value) {
+  if (typeof value === "string") {
+    if (value && value.length > 0) {
+      return false;
+    } else {
+      return true;
     }
-  });
-  header.createSpan({ cls: "tree-item-icon collapse-icon" });
-  header.createDiv({
-    cls: "tree-item-inner",
-    text
-  });
-  header.createDiv({ cls: "tree-item-flair-outer" }, (el) => {
-    el.createSpan({
-      cls: "tree-item-flair",
-      text: files.length.toString()
-    });
-  });
-  const content = pane.createDiv({ cls: "search-result-container" });
-  content.createDiv({
-    attr: {
-      "style": "width: 1px; height: 0.1px; margin-bottom: 0px;"
+  } else if (value instanceof Array) {
+    if (value && value.length > 0) {
+      return false;
+    } else {
+      return true;
     }
-  });
-  for (const file of files) {
-    content.createDiv({
-      cls: "tree-item-self is-clickable outgoing-link-item",
-      attr: { "draggable": true }
-    }, (el) => {
-      el.createSpan({ cls: "tree-item-icon" }, (el2) => {
-        (0, import_obsidian.setIcon)(el2, "link");
-      });
-      el.createDiv({
-        cls: "tree-item-inner",
-        text: file.name.substring(0, file.name.lastIndexOf("."))
-      }).addEventListener("click", () => {
-        this.app.workspace.openLinkText("", file.path);
-      });
-    });
   }
+  return true;
+}
+function asc(a, b) {
+  if (a < b) {
+    return -1;
+  }
+  if (a > b) {
+    return 1;
+  }
+  return 0;
 }
 
 
