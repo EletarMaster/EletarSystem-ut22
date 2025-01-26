@@ -1746,6 +1746,7 @@
 		{"id":"9b47c4d601034058","fromNode":"1fa6376f20dc2591","fromSide":"bottom","toNode":"837f0043d24ea475","toSide":"top"},
 		{"id":"a927cd3c83ea5d2d","fromNode":"144f6fc5165eaa87","fromSide":"bottom","toNode":"6f9c1e5a12547706","toSide":"top"},
 		{"id":"3923c4e2383d254b","fromNode":"292a864deb7a72e0","fromSide":"bottom","toNode":"6327d7a5c68762dc","toSide":"top"},
-		{"id":"55cbdc4552655c18","fromNode":"2930f054125f3489","fromSide":"top","toNode":"0d1d9c876b59a90d","toSide":"bottom"}
+		{"id":"55cbdc4552655c18","fromNode":"2930f054125f3489","fromSide":"top","toNode":"0d1d9c876b59a90d","toSide":"bottom"},
+		{"id":"0c624a1937216e38","fromNode":"543eab5abe9f782d","fromSide":"right","toNode":"d4b3071b632a0741","toSide":"left"}
 	]
 }
