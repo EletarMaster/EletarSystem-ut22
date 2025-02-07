@@ -2020,7 +2020,27 @@
 		{"id":"3097273c1417f25c","type":"file","file":"Статейки/Навыки/Социальные/Эмпатия/Навыки/Цветные Страницы Бесцветной Книги.md","x":21478,"y":12002,"width":394,"height":185,"color":"5"},
 		{"id":"af61fa0fa522c765","type":"file","file":"Статейки/Навыки/Социальные/Эмпатия/Навыки/Чужая боль 3.md","x":21945,"y":12002,"width":400,"height":185,"color":"2"},
 		{"id":"96778770286d1d1d","type":"file","file":"Статейки/Навыки/Социальные/Эмпатия/Навыки/Сверхчувствительный Приемник.md","x":21000,"y":12002,"width":396,"height":185,"color":"5"},
-		{"id":"be6b0979a9b3dafa","type":"file","file":"Статейки/Навыки/Социальные/Эмпатия/Навыки/Чужая боль 3.md","x":14392,"y":7306,"width":400,"height":185,"color":"2"}
+		{"id":"be6b0979a9b3dafa","type":"file","file":"Статейки/Навыки/Социальные/Эмпатия/Навыки/Чужая боль 3.md","x":14392,"y":7306,"width":400,"height":185,"color":"2"},
+		{"id":"72bd88d7ebf2436f","type":"file","file":"Статейки/Категории Способностей/Социальные.md","x":7311,"y":12620,"width":1335,"height":100,"color":"#c8b90e"},
+		{"id":"1bafa4df810cf303","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Речи Дъявола.md","x":7311,"y":12800,"width":1335,"height":140,"color":"#eee8e8"},
+		{"id":"ad71aa76facfd776","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Лукавые Речи 1.md","x":7311,"y":13044,"width":400,"height":196,"color":"#eee8e8"},
+		{"id":"955fd9e7d9da7840","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Лукавые Речи 2.md","x":7311,"y":13288,"width":400,"height":179,"color":"2"},
+		{"id":"9dbd2c1d2df357ee","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Златоуст.md","x":7311,"y":13527,"width":400,"height":200,"color":"#eee8e8"},
+		{"id":"f1c629e1a217e986","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Потусторонние Речи.md","x":7311,"y":13806,"width":400,"height":179,"color":"#eee8e8"},
+		{"id":"7dda7909289a8b91","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Серебряные монеты свободы 1.md","x":7311,"y":14050,"width":400,"height":185,"color":"#eee8e8"},
+		{"id":"d4de80924355cb9b","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Серебряные монеты свободы 2.md","x":7311,"y":14305,"width":400,"height":180,"color":"2"},
+		{"id":"6b6deb243b3efadc","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Чужие Речи.md","x":7779,"y":13288,"width":400,"height":179,"color":"#eee8e8"},
+		{"id":"2db228bd2b0c167a","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Чужие Секреты.md","x":7779,"y":13527,"width":400,"height":200,"color":"#eee8e8"},
+		{"id":"b21e10cad8a6718c","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Лживые Секретики 2.md","x":7779,"y":14050,"width":400,"height":185,"color":"2"},
+		{"id":"507cc88437820cb3","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Дьявольская Речь.md","x":7779,"y":14305,"width":400,"height":180,"color":"#eee8e8"},
+		{"id":"049005b1a80f4e2e","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Гневливые Речи.md","x":8246,"y":13288,"width":400,"height":179,"color":"#eee8e8"},
+		{"id":"0612550e6f28bd5e","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Нарукавная Кукла.md","x":8246,"y":13527,"width":400,"height":200,"color":"#eee8e8"},
+		{"id":"a1a4730eb6ced8ac","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Кукольное Представление.md","x":8246,"y":14050,"width":400,"height":185,"color":"#eee8e8"},
+		{"id":"4cead4fce56240d5","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Странная Просьба.md","x":8246,"y":14305,"width":400,"height":180,"color":"#eee8e8"},
+		{"id":"5d03869f2c7aa767","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Лживые Секретики 1.md","x":7779,"y":13806,"width":400,"height":179,"color":"#eee8e8"},
+		{"id":"d30b77e53420f21e","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Исподвыподверта.md","x":8246,"y":13806,"width":400,"height":179,"color":"#eee8e8"},
+		{"id":"7658156d9a25be7f","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Запах Лжи.md","x":8246,"y":13048,"width":400,"height":192,"color":"#eee8e8"},
+		{"id":"d711fb44e732a3af","type":"file","file":"Статейки/Навыки/Социальные/Речи Дъявола/Навыки/Змеиные Уста.md","x":7779,"y":13044,"width":400,"height":196,"color":"#eee8e8"}
 	],
 	"edges":[
 		{"id":"25c96060f3122743","fromNode":"4acd29c9ad53fbee","fromSide":"bottom","toNode":"18423ee16b6c8d8f","toSide":"top"},
@@ -2981,6 +3001,12 @@
 		{"id":"086b8cb511eee4bb","fromNode":"f68789cdc2438a22","fromSide":"bottom","toNode":"e38417409b439a2b","toSide":"top"},
 		{"id":"2bdd121d40625f22","fromNode":"3a14648d1b2eab70","fromSide":"bottom","toNode":"f68789cdc2438a22","toSide":"top"},
 		{"id":"2d516876ee77bc55","fromNode":"3d1507f649c04f24","fromSide":"bottom","toNode":"a112864065591b4a","toSide":"top"},
-		{"id":"025d50786b1ec442","fromNode":"a112864065591b4a","fromSide":"bottom","toNode":"be6b0979a9b3dafa","toSide":"top"}
+		{"id":"025d50786b1ec442","fromNode":"a112864065591b4a","fromSide":"bottom","toNode":"be6b0979a9b3dafa","toSide":"top"},
+		{"id":"cf93555d0f2bb58f","fromNode":"2db228bd2b0c167a","fromSide":"bottom","toNode":"5d03869f2c7aa767","toSide":"top"},
+		{"id":"3654a1c140a997c7","fromNode":"7658156d9a25be7f","fromSide":"left","toNode":"5d03869f2c7aa767","toSide":"right"},
+		{"id":"1b89c4961a258010","fromNode":"5d03869f2c7aa767","fromSide":"bottom","toNode":"b21e10cad8a6718c","toSide":"top"},
+		{"id":"a2e5e41ab66f8d80","fromNode":"0612550e6f28bd5e","fromSide":"right","toNode":"a1a4730eb6ced8ac","toSide":"right"},
+		{"id":"965fcff2009c5a8c","fromNode":"7dda7909289a8b91","fromSide":"bottom","toNode":"d4de80924355cb9b","toSide":"top"},
+		{"id":"b3317c8727d8d1d4","fromNode":"ad71aa76facfd776","fromSide":"bottom","toNode":"955fd9e7d9da7840","toSide":"top"}
 	]
 }
