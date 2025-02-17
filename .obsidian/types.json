@@ -5,6 +5,9 @@
     "tags": "tags",
     "Ссылки": "multitext",
     "Связанные навыки": "multitext",
-    "Уровни": "multitext"
+    "Уровни": "multitext",
+    "Источник": "multitext",
+    "Характеристики": "multitext",
+    "Количество целей": "multitext"
   }
 }
