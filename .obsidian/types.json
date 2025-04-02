@@ -16,6 +16,7 @@
     "Стоимость применения": "multitext",
     "Время действия": "multitext",
     "Шаблон": "multitext",
-    "Дальность": "multitext"
+    "Дальность": "multitext",
+    "Тип воздействия": "multitext"
   }
 }
