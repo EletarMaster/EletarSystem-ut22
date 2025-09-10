@@ -19,7 +19,7 @@
 * Запускаем **Github Desktop**
 * Выбираем **Clone Repository**
 * Выбираем вкладку **URL**
-* Пишем там (адрес текущей страницы): https://github.com/Yarlden/EletarSystem.git
+* Пишем там (адрес текущей страницы): [https://github.com/Yarlden/EletarSystem.git](https://github.com/EletarMaster/EletarSystem-ut22.git)
 * Выбираем куда скачивать систему
 * Жмем **Clone**
 * Вводим свои данные использованные для входа на этот сайт.
