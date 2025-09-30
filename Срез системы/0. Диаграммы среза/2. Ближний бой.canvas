@@ -395,20 +395,20 @@
 		{"id":"f340246474182346","type":"text","text":"","x":8179,"y":2121,"width":50,"height":174,"color":"4"},
 		{"id":"b1811e35006bd69b","type":"text","text":"","x":8229,"y":2121,"width":50,"height":174,"color":"3"},
 		{"id":"fc7209a605c0df43","type":"text","text":"","x":8129,"y":2121,"width":50,"height":174,"color":"1"},
-		{"id":"00dc9feffa9fddf3","type":"file","file":"Срез системы/2. Ближний бой/9. Дебош/Навыки/Рестлер.md","x":7320,"y":2121,"width":668,"height":355},
-		{"id":"243d5bf87f9bd299","type":"file","file":"Срез системы/2. Ближний бой/9. Дебош/Навыки/Костолом.md","x":7320,"y":1673,"width":668,"height":362},
 		{"id":"55b796bf5bd7f202","type":"text","text":"","x":8131,"y":1673,"width":50,"height":174,"color":"1"},
 		{"id":"3f65b7ae5b2db3f6","type":"text","text":"# 20 ОП","x":7991,"y":1847,"width":288,"height":188},
 		{"id":"0a298dbfe092f5d5","type":"text","text":"Тело\nЛовкость\nХарактер: 4","x":7991,"y":1673,"width":288,"height":174,"color":"5"},
 		{"id":"1c91b83c7658fff1","type":"text","text":"","x":8180,"y":1673,"width":50,"height":174,"color":"4"},
 		{"id":"a432547cacb04cda","type":"text","text":"","x":8230,"y":1673,"width":50,"height":174,"color":"3"},
 		{"id":"83a9ddc032b4e17f","type":"text","text":"","x":8130,"y":1673,"width":50,"height":174,"color":"1"},
-		{"id":"0b8423f1fb132081","x":7320,"y":2566,"width":668,"height":356,"type":"file","file":"Срез системы/2. Ближний бой/9. Дебош/Навыки/Идеальное оружие.md"},
 		{"id":"02f2ffe1fffe5cd2","type":"text","text":"# 25 ОП","x":7991,"y":2738,"width":288,"height":182},
 		{"id":"d02959588a5d790d","type":"text","text":"Тело\nЛовкость\nХарактер: 5","x":7991,"y":2564,"width":288,"height":174,"color":"5"},
 		{"id":"a6be2f9a70ef1ac7","type":"text","text":"","x":8230,"y":2564,"width":50,"height":174,"color":"3"},
 		{"id":"ed99868a0d042645","type":"text","text":"","x":8179,"y":2564,"width":50,"height":174,"color":"4"},
-		{"id":"a215dc46569333c7","type":"text","text":"","x":8129,"y":2564,"width":50,"height":174,"color":"1"}
+		{"id":"a215dc46569333c7","type":"text","text":"","x":8129,"y":2564,"width":50,"height":174,"color":"1"},
+		{"id":"00dc9feffa9fddf3","type":"file","file":"Срез системы/2. Ближний бой/9. Дебош/Навыки/Стальной хват.md","x":7320,"y":2564,"width":668,"height":355},
+		{"id":"243d5bf87f9bd299","type":"file","file":"Срез системы/2. Ближний бой/9. Дебош/Навыки/Костолом.md","x":7320,"y":2122,"width":668,"height":355},
+		{"id":"0be57a8e0140c37b","x":7320,"y":1673,"width":668,"height":362,"type":"file","file":"Срез системы/2. Ближний бой/9. Дебош/Навыки/Ударная стойка.md"}
 	],
 	"edges":[]
 }
