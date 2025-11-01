@@ -307,7 +307,6 @@
 		{"id":"cd0dcda98139c056","type":"text","text":"Удача: 3","x":6628,"y":1438,"width":291,"height":174,"color":"5"},
 		{"id":"ec0a689a7e5607b6","type":"text","text":"# 15 ОП","x":6628,"y":1612,"width":291,"height":189},
 		{"id":"cd727019df8c68d8","type":"text","text":"","x":6869,"y":1438,"width":50,"height":174,"color":"#e6d1d1"},
-		{"id":"180f95fbc97aacec","type":"file","file":"Срез системы/3. Дальний бой/7. Расплата/Навыки/Возмещение ущерба.md","x":5960,"y":1881,"width":668,"height":353},
 		{"id":"df6fd275c93613dc","type":"text","text":"Удача: 4","x":6628,"y":1880,"width":291,"height":178,"color":"5"},
 		{"id":"d61292df1824fb16","type":"text","text":"# 20 ОП","x":6628,"y":2058,"width":291,"height":176},
 		{"id":"81a5931ba8fb8abf","type":"text","text":"","x":6869,"y":1880,"width":50,"height":178,"color":"#e6d1d1"},
@@ -315,10 +314,11 @@
 		{"id":"7ceb9030d1ff574f","type":"text","text":"Удача: 4","x":6628,"y":2321,"width":291,"height":181,"color":"5"},
 		{"id":"46d59246840997e2","type":"text","text":"# 20 ОП","x":6628,"y":2502,"width":291,"height":180},
 		{"id":"8720827217dd675b","type":"text","text":"","x":6869,"y":2321,"width":50,"height":181,"color":"#e6d1d1"},
-		{"id":"6e04f0b549362c37","x":5960,"y":2760,"width":668,"height":360,"type":"file","file":"Срез системы/3. Дальний бой/7. Расплата/Навыки/Рука об руку с смертью.md"},
+		{"id":"6e04f0b549362c37","type":"file","file":"Срез системы/3. Дальний бой/7. Расплата/Навыки/Рука об руку с смертью.md","x":5960,"y":2760,"width":668,"height":360},
 		{"id":"3a48ea16ac6666c7","type":"text","text":"Удача: 5","x":6628,"y":2760,"width":291,"height":182,"color":"5"},
 		{"id":"da51420b4fddd05b","type":"text","text":"# 25 ОП","x":6628,"y":2942,"width":291,"height":180},
-		{"id":"9770ff942fc5665b","type":"text","text":"","x":6869,"y":2760,"width":50,"height":182,"color":"#e6d1d1"}
+		{"id":"9770ff942fc5665b","type":"text","text":"","x":6869,"y":2760,"width":50,"height":182,"color":"#e6d1d1"},
+		{"id":"abeaaa17f5b89717","x":5960,"y":1880,"width":668,"height":354,"type":"file","file":"Срез системы/3. Дальний бой/7. Расплата/Навыки/Плата за карму.md"}
 	],
 	"edges":[]
 }
