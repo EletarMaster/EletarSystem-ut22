@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"f52181274b697371","type":"text","text":"# 10 ОП","x":186,"y":111,"width":294,"height":181},
+		{"id":"1134e6edd9009713","type":"text","text":"Ловкость\nИнтеллект\nВосприятие: 2","x":186,"y":-69,"width":294,"height":181,"color":"5"},
+		{"id":"0972e856a7163fef","type":"text","text":"","x":430,"y":-69,"width":50,"height":180,"color":"5"},
+		{"id":"4d40dd270b2cb1f4","type":"file","file":"Срез системы/6. Ремесло/1. Инженерия/1. Основная инженерия/Основная инженерия (ЛОВ;ИНТ;ВОС).md","x":-479,"y":-291,"width":779,"height":145},
+		{"id":"5649d48054c282cb","type":"text","text":"","x":300,"y":-291,"width":50,"height":145,"color":"4"},
+		{"id":"3c6005571d6070c0","type":"text","text":"","x":350,"y":-291,"width":50,"height":145,"color":"#4e53ef"},
+		{"id":"77f7c2450de7d89a","type":"text","text":"","x":400,"y":-291,"width":50,"height":145,"color":"5"},
+		{"id":"229650ab916b8587","type":"text","text":"","x":380,"y":-69,"width":50,"height":179,"color":"#4e53ef"},
+		{"id":"5728e5071c572f5b","type":"text","text":"","x":330,"y":-69,"width":50,"height":181,"color":"4"},
+		{"id":"924afbd0cea76741","type":"file","file":"Срез системы/6. Ремесло/1. Инженерия/1. Основная инженерия/Навыки/Инженер.md","x":-479,"y":-69,"width":665,"height":361},
+		{"id":"0cf6cdc6179bbad6","x":-479,"y":380,"width":665,"height":361,"type":"file","file":"Срез системы/6. Ремесло/1. Инженерия/1. Основная инженерия/Навыки/Ремонтник.md"},
+		{"id":"ddbae5a2349d5afd","type":"text","text":"# 10 ОП","x":186,"y":560,"width":294,"height":181},
+		{"id":"d8d8f194e6277628","type":"text","text":"Ловкость\nИнтеллект\nВосприятие: 2","x":186,"y":380,"width":294,"height":181,"color":"5"},
+		{"id":"0dab778ac25d3a38","type":"text","text":"","x":430,"y":380,"width":50,"height":180,"color":"5"},
+		{"id":"5f27ff76d83304e3","type":"text","text":"","x":380,"y":380,"width":50,"height":179,"color":"#4e53ef"},
+		{"id":"6d844b7f169e6d59","type":"text","text":"","x":330,"y":380,"width":50,"height":181,"color":"4"},
+		{"id":"13190a3ec2ac62d1","x":-479,"y":840,"width":665,"height":361,"type":"file","file":"Срез системы/6. Ремесло/1. Инженерия/1. Основная инженерия/Навыки/Перерасход деталей.md"},
+		{"id":"ccf0cdfd4f37e4d7","type":"text","text":"# 10 ОП","x":186,"y":1020,"width":294,"height":181},
+		{"id":"e77db52f94a230bd","type":"text","text":"Ловкость\nИнтеллект\nВосприятие: 2","x":186,"y":840,"width":294,"height":181,"color":"5"},
+		{"id":"63759fd2927fa89a","type":"text","text":"","x":430,"y":840,"width":50,"height":180,"color":"5"},
+		{"id":"530d9b6312475b28","type":"text","text":"","x":380,"y":840,"width":50,"height":179,"color":"#4e53ef"},
+		{"id":"0fbc85e19cfa065f","type":"text","text":"","x":330,"y":840,"width":50,"height":181,"color":"4"}
+	],
+	"edges":[]
+}
