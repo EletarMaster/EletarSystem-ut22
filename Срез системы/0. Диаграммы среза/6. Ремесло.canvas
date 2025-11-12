@@ -3,10 +3,7 @@
 		{"id":"f52181274b697371","type":"text","text":"# 10 ОП","x":186,"y":111,"width":294,"height":181},
 		{"id":"1134e6edd9009713","type":"text","text":"Ловкость\nИнтеллект\nВосприятие: 2","x":186,"y":-69,"width":294,"height":181,"color":"5"},
 		{"id":"0972e856a7163fef","type":"text","text":"","x":430,"y":-69,"width":50,"height":180,"color":"5"},
-		{"id":"4d40dd270b2cb1f4","type":"file","file":"Срез системы/6. Ремесло/1. Инженерия/1. Основная инженерия/Основная инженерия (ЛОВ;ИНТ;ВОС).md","x":-479,"y":-291,"width":779,"height":145},
-		{"id":"5649d48054c282cb","type":"text","text":"","x":300,"y":-291,"width":50,"height":145,"color":"4"},
-		{"id":"3c6005571d6070c0","type":"text","text":"","x":350,"y":-291,"width":50,"height":145,"color":"#4e53ef"},
-		{"id":"77f7c2450de7d89a","type":"text","text":"","x":400,"y":-291,"width":50,"height":145,"color":"5"},
+		{"id":"4d40dd270b2cb1f4","type":"file","file":"Срез системы/6. Ремесло/1. Инженерия/1. Основная инженерия/Основная инженерия (ЛОВ;ИНТ;ВОС).md","x":-479,"y":-291,"width":809,"height":145},
 		{"id":"229650ab916b8587","type":"text","text":"","x":380,"y":-69,"width":50,"height":179,"color":"#4e53ef"},
 		{"id":"5728e5071c572f5b","type":"text","text":"","x":330,"y":-69,"width":50,"height":181,"color":"4"},
 		{"id":"924afbd0cea76741","type":"file","file":"Срез системы/6. Ремесло/1. Инженерия/1. Основная инженерия/Навыки/Инженер.md","x":-479,"y":-69,"width":665,"height":361},
@@ -75,7 +72,10 @@
 		{"id":"97a486f206e73a0f","type":"text","text":"","x":330,"y":3602,"width":50,"height":181,"color":"4"},
 		{"id":"7c14f1e5700ffde4","type":"text","text":"","x":333,"y":4062,"width":50,"height":181,"color":"4"},
 		{"id":"9cad74a181ada1c7","type":"text","text":"","x":330,"y":4521,"width":50,"height":181,"color":"4"},
-		{"id":"05d7b47d3b4dcb54","type":"text","text":"","x":330,"y":4980,"width":50,"height":181,"color":"4"}
+		{"id":"05d7b47d3b4dcb54","type":"text","text":"","x":330,"y":4980,"width":50,"height":181,"color":"4"},
+		{"id":"77f7c2450de7d89a","type":"text","text":"","x":430,"y":-291,"width":50,"height":145,"color":"5"},
+		{"id":"3c6005571d6070c0","type":"text","text":"","x":380,"y":-291,"width":50,"height":145,"color":"#4e53ef"},
+		{"id":"5649d48054c282cb","type":"text","text":"","x":330,"y":-291,"width":50,"height":145,"color":"4"}
 	],
 	"edges":[]
 }
