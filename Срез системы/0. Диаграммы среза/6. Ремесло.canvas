@@ -146,7 +146,7 @@
 		{"id":"acfc33d546db39b2","type":"text","text":"","x":1486,"y":4521,"width":50,"height":178,"color":"5"},
 		{"id":"ada2a990dd41835a","type":"text","text":"","x":1436,"y":4521,"width":50,"height":177,"color":"#4e53ef"},
 		{"id":"7f7bb779f9fdb2fd","type":"text","text":"","x":1386,"y":4520,"width":50,"height":179,"color":"4"},
-		{"id":"0431824eb7da7394","x":580,"y":4980,"width":662,"height":361,"type":"file","file":"Срез системы/6. Ремесло/2. Алхимия/1. Основная алхимия/Навыки/Магистр алхимии.md"},
+		{"id":"0431824eb7da7394","type":"file","file":"Срез системы/6. Ремесло/2. Алхимия/1. Основная алхимия/Навыки/Магистр алхимии.md","x":580,"y":4980,"width":662,"height":361},
 		{"id":"302bcdf2c8ffbb74","type":"text","text":"","x":1386,"y":4983,"width":50,"height":179,"color":"4"},
 		{"id":"3a9d9ca24f7d8df4","type":"text","text":"# 30 ОП","x":1242,"y":5155,"width":294,"height":186},
 		{"id":"e14925cd2322d41b","type":"text","text":"Ловкость\nИнтеллект\nВосприятие: 6","x":1242,"y":4977,"width":294,"height":179,"color":"5"},
