@@ -122,7 +122,6 @@
 		{"id":"cfb7cf28c3aeb677","type":"text","text":"","x":1483,"y":2680,"width":50,"height":178,"color":"5"},
 		{"id":"e7a9346952eef5c1","type":"text","text":"","x":1433,"y":2680,"width":50,"height":177,"color":"#4e53ef"},
 		{"id":"dafa5f7e7ae1111a","type":"text","text":"","x":1383,"y":2680,"width":50,"height":179,"color":"4"},
-		{"id":"bad9802297390293","type":"file","file":"Срез системы/6. Ремесло/2. Алхимия/1. Основная алхимия/Навыки/Отравитель.md","x":580,"y":3140,"width":659,"height":361},
 		{"id":"41bc3f87ee8ee614","type":"text","text":"# 20 ОП","x":1242,"y":3318,"width":294,"height":183},
 		{"id":"7b75592d6956e0ea","type":"text","text":"Ловкость\nИнтеллект\nВосприятие: 4","x":1242,"y":3140,"width":294,"height":179,"color":"5"},
 		{"id":"15a048c68e115575","type":"text","text":"","x":1486,"y":3140,"width":50,"height":178,"color":"5"},
@@ -152,7 +151,8 @@
 		{"id":"e14925cd2322d41b","type":"text","text":"Ловкость\nИнтеллект\nВосприятие: 6","x":1242,"y":4977,"width":294,"height":179,"color":"5"},
 		{"id":"d9045b0748a60d10","type":"text","text":"","x":1486,"y":4977,"width":50,"height":178,"color":"5"},
 		{"id":"f0ed14fa6267ff98","type":"text","text":"","x":1436,"y":4977,"width":50,"height":177,"color":"#4e53ef"},
-		{"id":"2c84bbe5d57138d6","type":"text","text":"","x":1386,"y":4977,"width":50,"height":179,"color":"4"}
+		{"id":"2c84bbe5d57138d6","type":"text","text":"","x":1386,"y":4977,"width":50,"height":179,"color":"4"},
+		{"id":"bad9802297390293","type":"file","file":"Срез системы/6. Ремесло/2. Алхимия/1. Основная алхимия/Навыки/Отравитель.md","x":580,"y":3141,"width":659,"height":361}
 	],
 	"edges":[]
 }
