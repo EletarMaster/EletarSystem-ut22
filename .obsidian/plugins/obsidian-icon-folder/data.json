@@ -33,25 +33,5 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  },
-  "Статейки/Мистические": {
-    "iconName": "LiAtom",
-    "iconColor": "#891bb1"
-  },
-  "Статейки/Мистические/Вера": {
-    "iconName": "LiAntenna",
-    "iconColor": "#bdc011"
-  },
-  "Статейки/Мистические/Волшебство": {
-    "iconName": "LiAperture",
-    "iconColor": "#1379d8"
-  },
-  "Статейки/Мистические/Единение": {
-    "iconName": "LiAudioLines",
-    "iconColor": "#0ec83d"
-  },
-  "Статейки/Мистические/Пробуждение": {
-    "iconName": "LiAxe",
-    "iconColor": "#ea1010"
   }
 }
