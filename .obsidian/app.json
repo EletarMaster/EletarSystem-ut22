@@ -1,6 +1,6 @@
 {
   "alwaysUpdateLinks": true,
   "propertiesInDocument": "visible",
-  "defaultViewMode": "source",
+  "defaultViewMode": "preview",
   "promptDelete": false
 }
